@@ -1,0 +1,46 @@
+﻿@using MvcGiris.Library
+@{
+    ViewBag.Title = "Index";
+}
+
+@{ string ad = "Sinem";
+    string soyad = "Özmen";
+    string adsoyad = ad + " " + soyad;
+
+<ul>
+    <li>
+        @ad
+    </li>
+    <li>
+        @soyad
+    </li>
+    <li>
+        @(ad + " " + soyad)
+    </li>
+</ul>
+
+}
+
+@ad
+<br />
+@soyad
+<br />
+@adsoyad
+
+<h2>Index</h2>
+<h3>Mvc Giriş Sayfam</h3>
+@Html.TextBox("Tarih",DateTime.Now.ToShortDateString())
+@Html.CheckBox("ÇekEt",false,new { @class="m-1"})
+@Html.DropDownList("unit")
+@Html.TextBox("deneme",null, new { @class="m-1"})
+@Html.TextBox("tarih")
+@Html.Button("btnOk1",ButtonType.button,"MyExtension Çalıştı")
+<input type="button" name="name" value="" />
+<button type="reset" name="btnOk1" id="btnOk" value="DenemeBtn">Deneme</button>
+<div><img src="https://picsum.photos/400/400" alt="Alternate Text" /></div>
+
+<h2>@ViewData["mesaj"]</h2>
+<h3>@TempData["mesaj"]</h3>
+
+@Html.ButtonRenkli("btnOk2",ButtonType.button,"Düğme",ButtonRenk.warning)
+@Html.ButtonRenkli("btnOk3",ButtonType.submit,"Düğme",ButtonRenk.primary,null)

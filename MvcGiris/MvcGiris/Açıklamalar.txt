@@ -1,0 +1,11 @@
+﻿MVC-Model / View / Controller 
+Mvc bir design pattern dir.
+İlk çıkış tarihi 1979 yılıdır.
+Bir çok kodlama dilinde bu pattern kullanılmaktadır.
+Php,Java,Phyton...etc
+
+Model==> Projede nesnelerin oluşturulduğu katmandır.Veritabanı sınıflar ile ifade edilir. Bu katmanda veri erişimi ile veritabanı üzerinde t-sql işlemleri yapılmaktadır.(Bu işlemler Entity Framework, Hibernate gibi Orm ler ile yapılmaktadır.(Object Relation Maping))
+
+View==> Kullanıcının gördüğü arayüzdür. Html,css ve javascript kodları ile yazdığımız web sayfası olabileceği gibi masaüstü uygulaması da olabilir. 
+
+Controller==> İstemciden gelen isteği işler ve Model-View katmanları arasında köprü görevi görür. View katmanından gelen isteği işleyerek model katmanına aktarır ve model katmanında yapılan işlemlerden kullanıcıya bir view döndürür. Controller içerisinde bir ve daha fazla action olabilir. Genellikle her bir action ı bir web sayfası üretmek için kullanırız.
